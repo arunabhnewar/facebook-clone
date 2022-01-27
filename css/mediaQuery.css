@@ -1,0 +1,46 @@
+/*=======Large version===========*/
+@media screen and (max-width: 1170px) {
+    .search_content {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .search_content input {
+        display: none;
+    }
+    .profile_section ul li:nth-child(3){
+        display: flex;
+    }
+    .profile_section ul li:nth-child(1){
+        display: none;
+    }
+    .profile_section ul li:nth-child(2){
+        display: none;
+    }
+
+    nav ul li:last-child {
+        display: flex;
+    }
+    .group {
+        display: none;
+    }
+}
+
+
+
+/*============laptop,tablet version===========*/
+@media screen and (max-width: 992px) {
+    nav {
+        display: none;
+    }
+    .menu_toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_toggler  span {
+        color: #fff;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+}
