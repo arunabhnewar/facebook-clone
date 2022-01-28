@@ -24,6 +24,9 @@
     .group {
         display: none;
     }
+    .left_side {
+        display: none;
+    }
 }
 
 
@@ -42,5 +45,8 @@
         color: #fff;
         font-size: 18px;
         margin-left: 15px;
+    }
+    .right_side {
+        display: none;
     }
 }
