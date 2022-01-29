@@ -469,6 +469,39 @@ main {
     border-radius: 50%;
 }
 
+.contact_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_icons {
+    display: flex;
+    align-items: center;
+}
+
+.contact_icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    background: unset;
+    padding: 6px;
+}
+
+.contact_icons div:hover {
+    border-radius: 35px;
+    background: rgba(202, 201, 201, 0.35);
+   
+}
+
+.contact_icons div span {
+    color: #d6d4d4;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
 /*===========scrollbar========*/
 /* width */
 ::-webkit-scrollbar {
