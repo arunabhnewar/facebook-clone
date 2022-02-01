@@ -25,7 +25,7 @@
         display: none;
     }
     .left_side {
-        display: none;
+        display: none ;
     }
 }
 
@@ -48,5 +48,33 @@
     }
     .right_side {
         display: none;
+    }
+    .middle_side {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+
+
+/*=====================================*/
+@media screen and (max-width: 768px) {
+   
+}
+
+
+
+/*==============mobile version===================*/
+@media screen and (max-width: 589px) {
+    .middle_side {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .story_content {
+        min-width: 90px;
+    }
+    .story_content:nth-child(5) {
+       display: none;
     }
 }

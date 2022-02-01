@@ -117,20 +117,21 @@ nav ul li a::after {
     content: attr(data-tag);
     background-color: #d6d4d4;
     position: absolute;
-    bottom: -38px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(20, 18, 18);
     text-align: center;
     font-size: 14px;
     border-radius: 8px;
-    padding: 8px 10px;
+    padding: 8px 20px;
     display: none;
+    height: 20px;
+    width: 50px;
 }
 
 nav ul li a:hover::after {
     display: block;
-   
 }
 
 nav ul li  span{
@@ -152,6 +153,21 @@ nav ul li:first-child a:hover {
     border-radius: unset;
 }
 
+/* li[data-tag="Watch"] a{
+    position: relative;
+}
+
+li[data-tag="Watch"] a::after{
+    content: attr(data-notification);
+    background: red;
+    border-radius: 45px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 5px;
+} */
 
 
 /*========right header==========*/
@@ -211,7 +227,7 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    background-color: olivedrab;
+    background-color: #1c1e21;
 }
 
 .left_side, .right_side {
@@ -223,6 +239,9 @@ main {
 .middle_side {
     flex-flow: 1;
     height: 100vh;
+    /* min-width: 804px; */
+    overflow: auto;
+    padding: 75px 32px 0 32px;
 }
 
 
@@ -331,7 +350,7 @@ main {
 }
 
 
-/*===========scrollbar========*/
+/*=======lest side scrollbar========*/
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -380,6 +399,148 @@ main {
 .footer_text a span {
     transform: translateY(7px);
 }
+
+
+/*=======right side==========*/
+.story_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 12px;
+}
+
+.story_content {
+    height: 220px;
+    width: 18%;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.create_story {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.story_profile {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.story_profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.create_story .bottom_story {
+    flex-basis: 50px;
+    background: #18191A;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.create_story .bottom_story h5 {
+    color: #e7e6e6;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.create_btn {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2374e1;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #1c1e21;
+}
+
+.create_btn span {
+    color: #e7e6e6;
+}
+
+.story_avatar {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.story_avatar img {
+    border-radius: 50%;
+    border: 3px solid #2374e1;
+}
+
+.story_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.story_content:hover .story_img {
+    transform: scale(1.1);
+}
+
+.story_profile:hover img {
+    transform: scale(1.1);
+}
+
+.avatar_name h4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+    display: -webkit-box;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 400;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 2%;
+    width: 98%;
+}
+
+.more_story {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4F5050;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.more_story span {
+    color: #d6d4d4;
+} 
+
+
+
+
 
 
 /*=======right side==========*/
@@ -440,6 +601,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: unset;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sponsored_item:hover {
+    background: rgba(66, 66, 66, 0.7);
 }
 
 .sponsor_img {
@@ -501,8 +671,11 @@ main {
     font-size: 24px;
 }
 
+.right_menu li:last-child {
+    padding: unset;
+}
 
-/*===========scrollbar========*/
+/*=======right side scrollbar========*/
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
