@@ -689,13 +689,102 @@ main {
    
 }
 
+.post_box {
+    background: rgb(36, 37, 38);
+    padding: 5px 15px;
+    border-radius: 8px;
+    max-width: 650px;
+}
 
+.user_post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.user_post .user_profile {
+    display: flex;
+    align-items: center;
+    
+}
 
+.user_post .user_profile .user_img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
 
+.user_post .user_profile .user_img img {
+    width: 100%;
+    border-radius: 50%;
+}
 
+.user_post .user_profile .user_name {
+    margin-left: 8px;
+}
 
+.user_post .user_profile .user_name a h5 {
+    font-size: 16px;
+    color: #d6d4d4;
+    font-weight: 400;
+    cursor: pointer;
+}
 
+.user_post .user_profile .user_name .post_time {
+    display: flex;
+    align-items: center;
+}
+
+.user_post .user_profile .user_name .post_time p {
+    color: #727272;
+    font-size: 12px;
+}
+
+.user_post .user_profile .user_name .post_time span {
+    color: #adadad;
+    font-size: 14px;
+}
+
+.user_post .more_post {
+    background: unset;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ;
+}
+
+.user_post .more_post:hover {
+    background: #50545a;
+}
+
+.user_post .more_post span {
+    color: #d6d4d4;
+}
+
+.post_box .post_text {
+    margin-top: 5px;
+}
+
+.post_box .post_text p {
+    color: #d6d4d4;
+    font-size: 14px;
+}
+
+.post_box .post_text .post_img {
+    margin-top: 10px;
+    width: 600px;
+    height: 600px;
+}
+
+.post_box .post_text .post_img  img {
+    width: 100%;
+    text-align: center;
+}
 
 /*=======right side==========*/
 .birthday_event {
