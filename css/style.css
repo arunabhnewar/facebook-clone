@@ -37,6 +37,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
 }
 
 
@@ -153,21 +154,17 @@ nav ul li:first-child a:hover {
     border-radius: unset;
 }
 
-/* li[data-tag="Watch"] a{
-    position: relative;
-}
-
-li[data-tag="Watch"] a::after{
+nav ul li a::before{
     content: attr(data-notification);
     background: red;
     border-radius: 45px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
     color: #fff;
     font-size: 13px;
     padding: 0 5px;
-} */
+}
 
 
 /*========right header==========*/
@@ -694,6 +691,7 @@ main {
     padding: 5px 15px;
     border-radius: 8px;
     max-width: 650px;
+    height: auto;
 }
 
 .user_post {
@@ -776,15 +774,106 @@ main {
 }
 
 .post_box .post_text .post_img {
-    margin-top: 10px;
     width: 600px;
-    height: 600px;
+    text-align: center;
+    margin: 10px auto 0;
 }
 
 .post_box .post_text .post_img  img {
     width: 100%;
-    text-align: center;
+    min-height: 350px;
 }
+
+.post_activities {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.post_activities .post_reaction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post_activities .post_reaction img {
+    width: 18px;
+    cursor: pointer;
+}
+
+.post_activities .post_reaction h5 {
+    margin-left: 5px;
+    color: #e7e6e6;
+    font-weight: 400;
+}
+
+.post_activities .comments_share {
+    color: #e7e6e6;
+    font-weight: 300;
+}
+
+.like_comment_share {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 600px; */
+}
+
+.like_comment_share div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    color: #e7e6e6;
+    font-size: 14px;
+}
+
+.like_comment_share div span {
+    color: #838181;
+    margin-right: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*=======lest side scrollbar========*/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: unset;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #363636;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #444444;
+    border-radius: 25px;
+    display: none;
+} 
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 116, 116);
+} 
+
+.middle_side:hover::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+
+
 
 /*=======right side==========*/
 .birthday_event {
